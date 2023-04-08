@@ -1,0 +1,48 @@
+@BASE_URL = http://localhost:3000/api
+GET {{BASE_URL}}/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDMwODQ4MDFjNmM3ZmQ5ZGI1ZGNkYjQiLCJlbWFpbCI6ImRlbmVtZUBleGFtcGxlLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJvbmxpbmUiOnRydWUsImlhdCI6MTY4MDkwMjU0OCwiZXhwIjoxNjgwOTA2MTQ4fQ.4ImpdssnRlIr8rvxhRtt-bkM6DzUS_9u12pxJD4gyVk   
+###
+POST {{BASE_URL}}/users/createUser
+Content-Type: application/json
+
+{
+    "name":"deneme",
+    "userName":"deneme",
+    "email":"deneme@example.com",
+    "password":"taki55"
+}
+###
+PATCH {{BASE_URL}}/users/updateUser
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDMwODQ3NTFjNmM3ZmQ5ZGI1ZGNkYjIiLCJlbWFpbCI6ImRlbmVtZTJAZXhhbXBsZS5jb20iLCJpc0FkbWluIjpmYWxzZSwib25saW5lIjp0cnVlLCJpYXQiOjE2ODA5MTIxNjEsImV4cCI6MTY4MDkxNTc2MX0.P0BFYUGaeRxhvB9DNX65Lp1zODt2KxnQkM-FtblHsVw"
+{
+    "username":"abc"
+}
+###
+DELETE {{BASE_URL}}/users/6419ac28c00626dcb48166d
+Content-Type: application/json
+
+###
+POST {{BASE_URL}}/users/login
+Content-Type: application/json
+
+{
+    "email":"deneme@example.com",
+    "password":"taki55"
+}
+###
+PATCH {{BASE_URL}}/users/6430afcdd55729d35b676350
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDMwYWZjZGQ1NTcyOWQzNWI2NzYzNTAiLCJlbWFpbCI6ImRlbmVtZUBleGFtcGxlLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJvbmxpbmUiOnRydWUsImlhdCI6MTY4MDkxMjU4MywiZXhwIjoxNjgwOTE2MTgzfQ.vzHZxGijbfweCi_lbMO4A4yJPBYQCMCUSRCYP98GYgQ
+
+{
+    "password":"123"
+}
+###
+GET {{BASE_URL}}/users/getUser/643084751c6c7fd9db5dcdb2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDMwODQ3NTFjNmM3ZmQ5ZGI1ZGNkYjIiLCJlbWFpbCI6ImRlbmVtZTJAZXhhbXBsZS5jb20iLCJpc0FkbWluIjpmYWxzZSwib25saW5lIjp0cnVlLCJpYXQiOjE2ODA5MTEyNTQsImV4cCI6MTY4MDkxNDg1NH0._fD2M3TR19ipqB2m9wH3qFejgtHREUKF7_TljivqX7A
+
+###
+GET {{BASE_URL}}/users/meDelete
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDMwODQ4MDFjNmM3ZmQ5ZGI1ZGNkYjQiLCJlbWFpbCI6ImRlbmVtZUBleGFtcGxlLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJvbmxpbmUiOnRydWUsImlhdCI6MTY4MDkwMjU0OCwiZXhwIjoxNjgwOTA2MTQ4fQ.4ImpdssnRlIr8rvxhRtt-bkM6DzUS_9u12pxJD4gyVk
